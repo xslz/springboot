@@ -1,0 +1,16 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /mqtt/
+mqtt:
+  #自定义应用开关
+  enabled: true
+  #mqtt服务器地址 使用本机中docker容器提供的mqtt服务
+  host: tcp://127.0.0.1:1883
+  #mqtt服务用户名 当前未配置
+  username: admin
+  #mqtt服务用户密码 当前未配置
+  pwd: Lgy@2021
+  #mqtt clientid
+  clientid: localhost
+
