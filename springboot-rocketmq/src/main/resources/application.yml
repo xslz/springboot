@@ -1,0 +1,17 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /rocketmq/
+spring:
+  application:
+    name: rocketmq
+rocketmq:
+  name-server: 192.168.3.183:9876
+  producer:
+    group: simple-producer-group
+    #发送超时时间毫秒 默认3000
+    send-message-timeout: 3000
+    #同步发送失败时重试次数 默认2
+    retry-times-when-send-failed: 2
+  consumer:
+    group: simple-consumer-group
