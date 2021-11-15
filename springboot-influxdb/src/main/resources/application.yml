@@ -1,0 +1,11 @@
+server:
+  port: 8200
+  servlet:
+    context-path: /influxDb/
+spring:
+  influx:
+    url: http://127.0.0.1:28086
+    user: root
+    password: influxdb@2021
+    database: db
+
